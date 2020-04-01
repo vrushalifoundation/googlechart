@@ -1,0 +1,71 @@
+{
+  "name": "@vrushalisoft/googlechart",
+  "version": "0.9.0",
+  "description": "Angular 2 Google Charts library",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "ngc -p src",
+    "start": "http-server -c-1 -o -p 8875 .",
+    "pretest": "npm run build",
+    "test": "karma start karma.conf.js",
+    "posttest": "remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
+    "coverage-remap": "remap-istanbul -i coverage/coverage-final.json -o coverage/coverage-remapped.lcov -t lcovonly",
+    "coverage": "http-server -c-1 -o -p 9875 ./coverage"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "jasmine-core": "^2.4.1",
+    "karma": "^4.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "6.5.4",
+    "ts-helpers": "^1.1.1",
+    "ts-loader": "^1.3.3",
+    "tslint": "^4.3.1",
+    "typescript": "3.5.3",
+    "typings": "^2.1.0",
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.3.0",
+    "zone.js": "^0.9.1",
+    "@angular/cli": "^8.3.26"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "rxjs-compat": "^6.0.0-rc.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreekantha/ng2-googlechart.git"
+  },
+  "keywords": [
+    "angular2 charts",
+    "Charts",
+    "chart",
+    "charts",
+    "google chart",
+    "google charts",
+    "angular2 google charts",
+    "ng charts",
+    "ng2 charts",
+    "ng2 google charts",
+    "ng google charts"
+  ],
+  "author": "Shreekanth",
+  "bugs": {
+    "url": "https://github.com/shreekantha/ng2-googlechart/issues"
+  },
+  "homepage": "https://github.com/shreekantha/ng2-googlechart#readme"
+}
