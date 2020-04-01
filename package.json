@@ -17,13 +17,13 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/compiler": "^8.2.14",
-    "@angular/compiler-cli": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/forms": "8.2.14",
-    "@angular/platform-browser": "^8.2.14",
-    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/common": "^9.1.0",
+    "@angular/compiler": "^9.1.0",
+    "@angular/compiler-cli": "^9.1.0",
+    "@angular/core": "^9.1.0",
+    "@angular/forms": "9.1.0",
+    "@angular/platform-browser": "^9.1.0",
+    "@angular/platform-browser-dynamic": "^9.1.0",
     "jasmine-core": "^2.4.1",
     "karma": "^4.0.1",
     "karma-jasmine": "^1.0.2",
@@ -35,12 +35,12 @@
     "ts-helpers": "^1.1.1",
     "ts-loader": "^1.3.3",
     "tslint": "^4.3.1",
-    "typescript": "3.5.3",
+    "typescript": "3.8.3",
     "typings": "^2.1.0",
     "webpack": "^4.29.6",
     "webpack-dev-server": "^3.3.0",
-    "zone.js": "^0.9.1",
-    "@angular/cli": "^8.3.26"
+    "zone.js": "^0.10.3",
+    "@angular/cli": "^9.1.0"
   },
   "peerDependencies": {},
   "dependencies": {
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shreekantha/ng2-googlechart.git"
+    "url": "git+https://github.com/vrushalifoundation/googlechart.git"
   },
   "keywords": [
     "angular2 charts",
@@ -65,7 +65,7 @@
   ],
   "author": "Shreekanth",
   "bugs": {
-    "url": "https://github.com/shreekantha/ng2-googlechart/issues"
+    "url": "https://github.com/vrushalifoundation/googlechart/issues"
   },
-  "homepage": "https://github.com/shreekantha/ng2-googlechart#readme"
+  "homepage": "https://github.com/vrushalifoundation/googlechart#readme"
 }
