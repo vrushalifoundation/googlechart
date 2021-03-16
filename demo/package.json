@@ -21,6 +21,7 @@
     "@angular/platform-browser": "7.2.12",
     "@angular/platform-browser-dynamic": "7.2.12",
     "@angular/router": "7.2.12",
+    "@vrushalisoft/googlechart": "^1.4.0",
     "core-js": "^2.4.1",
     "ng2-googlechart": "file:../ng2-googlechart-2.15.0.tgz",
     "rxjs": "^6.4.0",
