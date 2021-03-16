@@ -71,13 +71,15 @@ export class GoogleChartDirective implements OnInit {
             var row;
             var item = new EventData();
             if (selectedData[0]) {
-                var column = selectedData[0].column;
+                var column = selectedData[0].column?selectedData[0].column:1;
                 let selectedDataTable=wrapper.getDataTable();
                 row = selectedData[0].row;
                 var item1 = selectedDataTable.getValue(row, 0);
                 var item2 = selectedDataTable.getValue(row, column);
                 item.row = item2;
                 item.column = item1;
+                item.rowIndex = row;
+                item.columnIndex = column;
                 this.select.next(item);
                 return this.select.next;
             }
@@ -95,4 +97,6 @@ export class GoogleChartDirective implements OnInit {
 export class EventData {
     row: any;
     column: any;
+    rowIndex:any;
+    columnIndex: any;
 }
