@@ -35,7 +35,7 @@ export class ComboChartDirective implements OnInit {
         
     }
     ngOnInit() {
-       this.chartLoaderServ.loadLoader().subscribe(googlecha=>{
+    //    this.chartLoaderServ.loadLoader().subscribe(googlecha=>{
         this.loadChartPackages().subscribe(loaded => {
             this.comboChartData();
             this.w.onresize = () => {
@@ -44,10 +44,10 @@ export class ComboChartDirective implements OnInit {
         }, error => {
             console.error('Error in loading Google chart packages');
         });
-        },error=>{
-         console.error("Error in loading Visualisation packages");
+        // },error=>{
+        //  console.error("Error in loading Visualisation packages");
 
-        });
+        // });
     }
     /**
      * loadChart() method is called to load google chart packages

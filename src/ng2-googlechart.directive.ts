@@ -34,7 +34,7 @@ export class ChartDirective implements OnInit {
         
     }
     ngOnInit() {
-         this.chartLoaderService.loadLoader().subscribe(googlecha=>{
+        //  this.chartLoaderService.loadLoader().subscribe(googlecha=>{
         this.loadChartPackages().subscribe(loaded => {
             this.prepareDataTable();
             this.w.onresize = () => {
@@ -43,10 +43,10 @@ export class ChartDirective implements OnInit {
         }, error => {
             console.error('Error in loading Google chart packages');
         });
-        },error=>{
-         console.error("Error in loading Visualisation packages");
+        // },error=>{
+        //  console.error("Error in loading Visualisation packages");
 
-        }); 
+        // }); 
       
     }
     /**
