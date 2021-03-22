@@ -24,7 +24,7 @@ export class GoogleChartDirective implements OnInit {
         this.el = this.elementRef.nativeElement; // You cannot use elementRef directly !
     }
     ngOnInit() {
-         this.chartLoaderService.loadLoader().subscribe(googlecha=>{
+        //  this.chartLoaderService.loadLoader().subscribe(googlecha=>{
         this.loadChart().subscribe(loaded => {
             
              this.drawWrapperChart(this.chartType, this.options, this.data, this.el);
@@ -34,10 +34,10 @@ export class GoogleChartDirective implements OnInit {
         }, error => {
             console.error('Error in loading Google chart packages');
         });
-        },error=>{
-         console.error("Error in loading Visualisation packages");
+        // },error=>{
+        //  console.error("Error in loading Visualisation packages");
 
-        }); 
+        // }); 
     }
     /**
      * loadChart() method is called to load google chart packages
