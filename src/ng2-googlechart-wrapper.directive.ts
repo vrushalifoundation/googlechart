@@ -36,8 +36,9 @@ export class GoogleChartDirective implements OnInit {
   ngOnInit() {
     //  this.chartLoaderService.loadLoader().subscribe(googlecha=>{
     // this.loadChart().subscribe(loaded => {
-
+    this.w = window;
     this.drawWrapperChart(this.chartType, this.options, this.data, this.el);
+
     this.w.onresize = () => {
       this.drawWrapperChart(this.chartType, this.options, this.data, this.el);
     };
