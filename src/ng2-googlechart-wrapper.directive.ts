@@ -1,13 +1,13 @@
 import {
   Directive,
   ElementRef,
-  Input,
-  Output,
   EventEmitter,
+  Input,
   OnInit,
+  Output,
 } from "@angular/core";
-import { ChartLoaderService } from "./ng2-googlechart.service";
 import { Observable } from "rxjs/Observable";
+import { ChartLoaderService } from "./ng2-googlechart.service";
 
 var chartLoaded;
 declare const google: any;
@@ -77,7 +77,7 @@ export class GoogleChartDirective implements OnInit {
       options: options || {},
     });
     let chart = wrapper.draw(el);
-    this.w.google.visualization.events.addListener(wrapper, "select", () => {
+    google.visualization.events.addListener(wrapper, "select", () => {
       var selectedData = wrapper.getChart().getSelection();
       var row;
       var item = new EventData();
@@ -95,14 +95,14 @@ export class GoogleChartDirective implements OnInit {
         return this.select.next;
       }
     });
-    this.w.google.visualization.events.addListener(
+    google.visualization.events.addListener(
       wrapper.getChart(),
       "onmouseover",
       () => {
         this.el.style.cursor = "pointer";
       }
     );
-    this.w.google.visualization.events.addListener(
+    google.visualization.events.addListener(
       wrapper.getChart(),
       "onmouseout",
       () => {

@@ -5,10 +5,10 @@
 import {
   Directive,
   ElementRef,
-  Input,
-  Output,
   EventEmitter,
+  Input,
   OnInit,
+  Output,
 } from "@angular/core";
 import { Observable } from "rxjs/Observable";
 import { ChartLoaderService } from "./ng2-googlechart.service";
